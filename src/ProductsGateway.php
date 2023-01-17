@@ -44,7 +44,7 @@ class ProductsGateway
     public function massDelete(array $ids)
     {
         $qMarks = str_repeat('?,', count($ids) - 1) . '?';
-        $sqlQuery = "DELETE FROM `products` WHERE id IN ($qMarks)";
+        $sqlQuery = "DELETE FROM `products` WHERE sku IN ($qMarks)";
         $statement = $this->connection->prepare($sqlQuery);
 
         foreach($ids as $k => $id){
