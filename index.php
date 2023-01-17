@@ -13,8 +13,8 @@ header("Content-type: application/json; charset: UTF-8");
 $request_parts = explode("/", $_SERVER['REQUEST_URI']);
 
 
-
-$host = "xxxxxxxx";
+// here database credentials
+$host = "xxxxxxxx"; 
 $user = "xxxxxxxx";
 $password = "xxxxxxxxx";
 $dbName = "xxxxxxxxxxx";
